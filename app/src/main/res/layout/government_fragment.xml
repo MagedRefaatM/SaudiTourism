@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GL1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GL2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/governmentViewsIv"
+        android:contentDescription="@string/khobarViews"
+        app:layout_constraintLeft_toRightOf="@id/GL1"
+        app:layout_constraintRight_toLeftOf="@id/GL2"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35"
+        android:id="@+id/GL3">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/GL4"
+        app:layout_constraintGuide_percent="0.47">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GL5"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GL6"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/leftBtn"
+        android:text="@string/Left"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/GL3"
+        app:layout_constraintBottom_toTopOf="@id/GL4"
+        app:layout_constraintLeft_toRightOf="@id/GL1"
+        app:layout_constraintRight_toLeftOf="@id/GL6"
+        android:background="@drawable/round_button">
+    </Button>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/rightBtn"
+        android:text="@string/Right"
+        android:textStyle="bold"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/GL3"
+        app:layout_constraintBottom_toTopOf="@id/GL4"
+        app:layout_constraintLeft_toRightOf="@id/GL5"
+        app:layout_constraintRight_toLeftOf="@id/GL2">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

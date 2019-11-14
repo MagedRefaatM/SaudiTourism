@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SaudiTourism</string>
+    <string name="asir_mountain">Asir Mountain</string>
+    <string name="cars">Vehicles</string>
+    <string name="complain">Complains</string>
+    <string name="events">Events</string>
+    <string name="flights">Flights</string>
+    <string name="hotels">Hotels</string>
+    <string name="jeddahViews">A View of Jeddah</string>
+    <string name="khobarViews">A View of Khobar</string>
+    <string name="meccaViews">A View of Mecca</string>
+    <string name="offers">Offers</string>
+    <string name="riyadhViews">A View Of Riyadh</string>
+    <string name="tourism_map">Tourism Map</string>
+    <string name="tourist_destination">Tourist Destination</string>
+    <string name="travel_services">Travel Services</string>
+    <string name="weAreJeddah">We Are Jeddah</string>
+    <string name="weAreKhobar">We Are Al-Khobar</string>
+    <string name="weAreMecca">We Are Mecca</string>
+    <string name="weAreRiyadh">We Are Al-Riyadh</string>
+    <string name="cityViews">Views Of City</string>
+    <string name="rate">Rate Us</string>
+    <string name="settings">Options</string>
+    <string name="share">Share App</string>
+    <string name="countryName">Saudi Arabia</string>
+    <string name="logout">Exit</string>
+    <string name="fifth">Five Stars</string>
+    <string name="first">One Star</string>
+    <string name="fourth">Four Stars</string>
+    <string name="second">Two Stars</string>
+    <string name="third">Three Stars</string>
+    <string name="riyadh">Pyramid Tower of Riyadh</string>
+    <string name="mecca">El-Haram El-Makky</string>
+    <string name="jeddah">Jeddah Coast</string>
+    <string name="khobar">View Of Al-Khobar Government</string>
+    <string name="favorites">Favorites</string>
+    <string name="pyramid_tower">Pyramid Tower</string>
+    <string name="five_stars">Five Stars</string>
+</resources>

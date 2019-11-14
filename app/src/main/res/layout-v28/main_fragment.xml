@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fra"
+    android:layout_width="413dp"
+    android:layout_height="750dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/block1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.38">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/block6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/menuBtn"
+            android:background="@drawable/menu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/block6">
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SaudiTv"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/menuBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            android:typeface="serif"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/linkTv">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/linkTv"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textColor="@android:color/holo_orange_dark"
+            app:layout_constraintLeft_toLeftOf="@id/SaudiTv"
+            app:layout_constraintRight_toRightOf="@id/SaudiTv"
+            app:layout_constraintTop_toBottomOf="@id/SaudiTv"
+            app:layout_constraintBottom_toTopOf="@id/block2">
+        </TextView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/block2"
+            app:layout_constraintGuide_percent="0.08"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linkTv">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/mountainIv"
+            app:layout_constraintTop_toBottomOf="@id/block2"
+            app:layout_constraintBottom_toTopOf="@id/block1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:contentDescription="@string/asir_mountain"
+            android:background="@drawable/saudiarabia">
+        </ImageView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/block3"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.64">
+        </androidx.constraintlayout.widget.Guideline>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/block1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/pager_header"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="@string/tourist_destination"
+            android:id="@+id/touristTv"
+            android:textStyle="bold">
+        </TextView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/touristTv"
+            app:layout_constraintBottom_toTopOf="@id/block3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <androidx.viewpager.widget.PagerTitleStrip
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineAmbientShadowColor="@android:color/holo_blue_light"/>
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/travelServiceTc"
+            android:textColor="@android:color/holo_blue_light"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/block3"
+            android:text="@string/travel_services">
+        </TextView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b1"
+            app:layout_constraintGuide_percent="0.01"
+            android:orientation="vertical">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b2"
+            app:layout_constraintGuide_percent="0.205"
+            android:orientation="vertical">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b"
+            app:layout_constraintGuide_percent="0.22"
+            android:orientation="vertical">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b8"
+            app:layout_constraintGuide_percent="0.45"
+            android:orientation="vertical">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b3"
+            app:layout_constraintGuide_percent="0.44"
+            android:orientation="vertical">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b9"
+            app:layout_constraintGuide_percent="0.672"
+            android:orientation="vertical">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b4"
+            app:layout_constraintGuide_percent="0.69"
+            android:orientation="vertical">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b5"
+            app:layout_constraintGuide_percent="0.96"
+            android:orientation="vertical">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b6"
+            app:layout_constraintGuide_percent="0.97"
+            android:orientation="horizontal">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b7"
+            app:layout_constraintGuide_percent="0.90"
+            android:orientation="horizontal">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/emergencyServicesBtn"
+            android:textColor="@android:color/white"
+            android:text="Emergency&#10;Services"
+            android:drawableTop="@drawable/call"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintLeft_toRightOf="@id/b1"
+            app:layout_constraintRight_toLeftOf="@id/b2"
+            app:layout_constraintTop_toTopOf="@id/carsBtn"
+            app:layout_constraintRight_toRightOf="@id/eventsBtn"
+            app:layout_constraintBottom_toTopOf="@id/updateBlock2">
+        </Button>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/updateBlock2"
+            app:layout_constraintGuide_percent="0.78">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/updateBlock"
+            app:layout_constraintGuide_percent="0.794">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/updateBlock3"
+            app:layout_constraintGuide_percent="0.88">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/eventsBtn"
+            android:textStyle="bold"
+            android:text="@string/events"
+            android:drawableTop="@drawable/ic_gavel_black_24dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintRight_toLeftOf="@id/b2"
+            app:layout_constraintTop_toBottomOf="@id/updateBlock"
+            app:layout_constraintBottom_toTopOf="@id/updateBlock3"
+            app:layout_constraintLeft_toRightOf="@id/b1">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/tourGuideBtn"
+            android:text="Tour&#10;Guide"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintTop_toBottomOf="@id/b7"
+            app:layout_constraintLeft_toRightOf="@id/b1"
+            app:layout_constraintRight_toLeftOf="@id/b2"
+            app:layout_constraintBottom_toTopOf="@id/b6">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/carsBtn"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/cars"
+            android:text="@string/cars"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintLeft_toRightOf="@id/b"
+            app:layout_constraintRight_toLeftOf="@id/b3"
+            app:layout_constraintTop_toBottomOf="@id/travelServiceTc"
+            app:layout_constraintBottom_toTopOf="@id/updateBlock2">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/offersBtn"
+            android:textStyle="bold"
+            android:text="@string/offers"
+            android:drawableTop="@drawable/offer"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintTop_toBottomOf="@id/updateBlock"
+            app:layout_constraintLeft_toRightOf="@id/b"
+            app:layout_constraintRight_toLeftOf="@id/b3"
+            app:layout_constraintBottom_toTopOf="@id/updateBlock3">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Tour&#10;Providers"
+            android:id="@+id/tourProvidersBtn"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintTop_toBottomOf="@id/b7"
+            app:layout_constraintLeft_toRightOf="@id/b"
+            app:layout_constraintRight_toLeftOf="@id/b3"
+            app:layout_constraintBottom_toBottomOf="@id/b6">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableTop="@drawable/plane"
+            android:text="@string/flights"
+            android:textStyle="bold"
+            android:id="@+id/flightBtn"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintBottom_toTopOf="@id/updateBlock2"
+            app:layout_constraintLeft_toRightOf="@id/b8"
+            app:layout_constraintRight_toLeftOf="@id/b9"
+            app:layout_constraintTop_toBottomOf="@id/travelServiceTc">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/hotelsBtn"
+            android:drawableTop="@drawable/sleep"
+            android:textStyle="bold"
+            android:text="@string/hotels"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@id/updateBlock3"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintLeft_toRightOf="@id/b8"
+            app:layout_constraintRight_toLeftOf="@id/b9"
+            app:layout_constraintTop_toBottomOf="@id/updateBlock">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:text="@string/favorites"
+            android:layout_height="0dp"
+            android:id="@+id/favoritesBtn"
+            android:drawableLeft="@drawable/favorite"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintLeft_toRightOf="@id/b8"
+            app:layout_constraintTop_toBottomOf="@id/b7"
+            app:layout_constraintRight_toLeftOf="@id/block5"
+            app:layout_constraintBottom_toTopOf="@id/b6">
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/tourismMapBtn"
+            android:textStyle="bold"
+            android:text="@string/tourism_map"
+            android:drawableTop="@drawable/location"
+            android:textColor="@android:color/white"
+            app:layout_constraintRight_toRightOf="@id/complainsBtn"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintTop_toTopOf="@+id/flightBtn"
+            app:layout_constraintRight_toLeftOf="@id/b5"
+            app:layout_constraintBottom_toBottomOf="@+id/hotelsBtn"
+            app:layout_constraintLeft_toRightOf="@id/b4">
+        </Button>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/block5"
+            app:layout_constraintGuide_percent="0.74">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/partGL"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75">
+        </androidx.constraintlayout.widget.Guideline>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/complainsBtn"
+            android:text="@string/complain"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_light"
+            app:layout_constraintRight_toLeftOf="@id/b5"
+            app:layout_constraintBottom_toTopOf="@id/b6"
+            app:layout_constraintLeft_toRightOf="@id/partGL"
+            app:layout_constraintTop_toBottomOf="@id/b7">
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

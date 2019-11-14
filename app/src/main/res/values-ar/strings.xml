@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سـيـاحـة الـسـعـوديـة</string>
+    <string name="asir_mountain">جـبـل أسـيـر</string>
+    <string name="cars">عـربـات</string>
+    <string name="complain">شـكــاوى</string>
+    <string name="events">أحـداث</string>
+    <string name="flights">رحـلات</string>
+    <string name="hotels">فـنـادق</string>
+    <string name="jeddahViews">مـظـهـر مـن مـظـاهـر جـدة</string>
+    <string name="khobarViews">مـظـهـر مـن مـظـاهـر الـخـبـر</string>
+    <string name="meccaViews">مـظـهـر مـن مـظـاهـر مـكـة</string>
+    <string name="offers">عـروض</string>
+    <string name="riyadhViews">مـظـهـر مـن مـظـاهـر الـريـاض</string>
+    <string name="tourism_map">خـريـطـة الـسـيـاح</string>
+    <string name="tourist_destination">وجـه الـسـائـحـيـن</string>
+    <string name="travel_services">خـدمـات الـسـفـر</string>
+    <string name="weAreJeddah">هـنـا جـدة</string>
+    <string name="weAreKhobar">هـنـا الـخـبـر</string>
+    <string name="weAreMecca">هـنـا مـكـة</string>
+    <string name="weAreRiyadh">هـنـا الـريـاض</string>
+    <string name="cityViews">مـنـاظـر الـمـديـنـة</string>
+    <string name="settings">الخصائص</string>
+    <string name="share">مشاركة</string>
+    <string name="rate">التقييم</string>
+    <string name="countryName">الـسـعـوديـة</string>
+    <string name="logout">خـروج</string>
+    <string name="first">النجمة الاولى</string>
+    <string name="fifth">خمس نجوم</string>
+    <string name="fourth">أربع نجوم</string>
+    <string name="second">نجمتان</string>
+    <string name="third">ثلاث نجو</string>
+    <string name="riyadh">برج الاهرام بالرياض</string>
+    <string name="mecca">الحرم المكى</string>
+    <string name="jeddah">ساحل جدة</string>
+    <string name="khobar">مـظـهـر مـن مـظـاهـر الـخـبـر</string>
+    <string name="favorites">تفضيلات</string>
+    <string name="pyramid_tower">برج الهرم</string>
+    <string name="five_stars">خمس نجوم</string>
+</resources>

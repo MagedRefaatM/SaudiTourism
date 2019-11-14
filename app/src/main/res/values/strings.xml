@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SaudiTourism</string>
+    <string name="asir_mountain">Asir Mountain</string>
+    <string name="tourist_destination">Tourist Destination</string>
+    <string name="travel_services">Travel Services</string>
+    <string name="events">Events</string>
+    <string name="cars">Cars</string>
+    <string name="offers">Offers</string>
+    <string name="flights">Flights</string>
+    <string name="hotels">Hotels</string>
+    <string name="tourism_map">Tourism Map</string>
+    <string name="Left" translatable="false"><![CDATA[<]]></string>
+    <string name="Right" translatable="false"><![CDATA[>]]></string>
+    <string name="jeddahViews">View of Jeddah</string>
+    <string name="weAreJeddah">نـحـنـا جـدة</string>
+    <string name="khobarViews">View of Khobar</string>
+    <string name="weAreKhobar">نـحـنـا الـخـبـر</string>
+    <string name="meccaViews">View of Mecca</string>
+    <string name="weAreMecca">نـحـنـا مـكـة</string>
+    <string name="riyadhViews">View Of Government</string>
+    <string name="weAreRiyadh">نـحـنـا الـريـاض</string>
+    <string name="cityViews">City Views</string>
+    <string name="Arabic" translatable="false">الـعربيـة</string>
+    <string name="English" translatable="false">English</string>
+    <string name="complain">Complain</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
+    <string name="countryName">الـسـعـوديـة</string>
+    <string name="Link" translatable="false">SaudiTourism.sa</string>
+    <string name="logout">LOGOUT</string>
+    <string name="five_stars">Five Stars !!</string>
+    <string name="first">first star</string>
+    <string name="second">second star</string>
+    <string name="third">third star</string>
+    <string name="fourth">fourth star</string>
+    <string name="fifth">fifth star</string>
+    <string name="riyadh">This is : Pyramid Tower of Riyadh</string>
+    <string name="jeddah">This is : Jeddah Coast</string>
+    <string name="mecca">This is : El-Haram El-Makky</string>
+    <string name="khobar">This is : Beautiful View Of Al-Khobar Government</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="favorites">Favorites</string>
+    <string name="pyramid_tower">Pyramid Tower</string>
+
+    <string-array name="cities">
+        <item>Riyadh</item>
+        <item>Jeddah</item>
+        <item>Mecca</item>
+        <item>Khobar</item>
+    </string-array>
+
+</resources>
